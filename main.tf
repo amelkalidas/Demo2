@@ -10,6 +10,18 @@ resource "azurerm_resource_group" "eastusrg" {
     location = "EastUs"  
 }
 
+resource "azurerm_resource_group" "tfRG" {
+    name = "terraformuserRG"
+    provider = azurerm.provider2-westus
+    location = "EastUs"  
+    
+}
+resource "azurerm_resource_group" "eastusrg2" {
+    name = "EastusRG2"
+    provider = azurerm.provider2-westus
+    location = "EastUs"  
+}
+
 resource "azurerm_storage_account" "westus-sg" {
     account_tier = "Standard"
     account_replication_type = "LRS"

@@ -17,9 +17,11 @@ terraform {
 
 provider "azurerm" {
     features {}
+    subscription_id = "8d3ed687-4dc7-4a9b-903a-b9a14bde85c4"
 }
 
 provider "azurerm" {
     features {}
     alias = "provider2-westus"  
+    subscription_id = "8d3ed687-4dc7-4a9b-903a-b9a14bde85c4"
 }
